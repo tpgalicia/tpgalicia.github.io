@@ -1,0 +1,10 @@
+site_name: APIs Transporte Público Galicia
+site_url: https://tpgal.github.io/docs
+theme:
+    name: material
+    palette:
+        scheme: slate
+        primary: light blue
+        accent: light blue
+    features:
+        - navigation.tabs
