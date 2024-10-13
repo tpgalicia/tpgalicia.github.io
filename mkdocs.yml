@@ -1,7 +1,10 @@
 site_name: APIs Transporte Público Galicia
 site_url: https://tpgalicia.github.io
-repo_url: https://github.com/tpgalicia/tpgalicia.github.io
 docs_dir: docs
+
+repo_url: https://github.com/tpgalicia/tpgalicia.github.io
+repo_name: GitHub
+edit_uri: blob/main/docs/
 
 copyright: Copyright © 2024 Grupo TPGalicia. Todos los derechos reservados.
 
