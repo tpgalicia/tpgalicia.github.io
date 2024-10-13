@@ -1,10 +1,37 @@
 site_name: APIs Transporte Público Galicia
-site_url: https://tpgal.github.io/docs
+site_url: https://tpgalicia.github.io
+repo_url: https://github.com/tpgalicia/tpgalicia.github.io
+docs_dir: docs
+
+copyright: Copyright © 2024 Grupo TPGalicia. Todos los derechos reservados.
+
 theme:
-    name: material
-    palette:
-        scheme: slate
-        primary: light blue
-        accent: light blue
-    features:
-        - navigation.tabs
+  language: es
+  name: material
+  
+  palette:
+    primary: teal
+    accent: teal
+
+  features:
+    - content.action.edit
+    - content.action.view
+    - navigation.footer
+
+  font: false
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+nav:
+  - Inicio: index.md
+  - Transporte autonómico: autonomic/index.md
+  - Transporte urbano:
+    - A Coruña: urban/coruna.md
+    - Vigo: urban/vigo.md
+  - Otros:
+    - NAP: other/nap.md
+
+  
