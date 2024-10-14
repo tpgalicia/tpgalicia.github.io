@@ -30,7 +30,8 @@ markdown_extensions:
 
 nav:
   - Inicio: index.md
-  - Transporte autonómico: autonomic/index.md
+  - Transporte autonómico: 
+    - Introducción: autonomic/index.md
     - Operadores:
       - ALSA: autonomic/operator/alsa.md
       - Arriva: autonomic/operator/arriva.md
