@@ -37,7 +37,7 @@ nav:
       - Arriva: autonomic/operator/arriva.md
       - Monbus: autonomic/operator/monbus.md
   - Transporte urbano:
-    - A Coruña: urban/coruna.md
+    - A Coruña: urban/coruna/
     - Vigo: urban/vigo.md
   - Otros:
     - NAP: other/nap.md
