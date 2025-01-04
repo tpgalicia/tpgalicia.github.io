@@ -96,7 +96,7 @@ document
 	.querySelectorAll("#v-pills-tabContent .tab-pane")
 	.values()
 	.map(p => p.innerHTML)
- ```
+```
 
 ### Estimaciones de una parada
 
