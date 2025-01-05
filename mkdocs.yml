@@ -38,6 +38,7 @@ nav:
       - Monbus: autonomic/operator/monbus.md
   - Transporte urbano:
     - A Coruña: urban/coruna/
+    - Santiago de Compostela: urban/santiago.md
     - Vigo: urban/vigo.md
   - Otros:
     - NAP: other/nap.md
