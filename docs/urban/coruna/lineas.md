@@ -90,6 +90,7 @@ Cada bus es un diccionario en esa lista con las entradas:
 - `estado`: Estado del bus,
     - 0: En la parada
     - 1: En movimiento
+    - 17: Incorporando a ruta, en una extensión o fuera del itinerario de ida/vuelta normal.
 - `distancia`: Posición del bus en su sentido del recorrido como un tanto por uno de la distancia total de ese recorrido.
 
 !!! warning "¡Cuidado!"
