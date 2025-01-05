@@ -66,7 +66,7 @@ Bajo la clave _lineas_ se describe la información relativa a las líneas en una
     - Lista de identificadores de las paradas por las que pasa el recorrido
 
 !!! note "Nota"
-    Aunque algunas líneas contienen 3 rutas diferentes, aún no he tenido problemas utilizando la primera entrada como sentido de IDA, la segunda como VUELTA e ignorando las sucesivas
+    Aunque algunas líneas contienen 3 rutas diferentes, aún no he tenido problemas utilizando la primera entrada como sentido de IDA, la segunda como VUELTA e ignorando las sucesivas. El sentido 0 suele ser la IDA, el sentido 1 la VUELTA, los 2-5 suelen ser variantes o extensiones y el sentido 30 es la retirada a Cocheras.
 
 A continuación se muestra un ejemplo de respuesta de este bloque:
 
