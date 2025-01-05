@@ -38,9 +38,17 @@ nav:
       - Monbus: autonomic/operator/monbus.md
   - Transporte urbano:
     - A Coruña: urban/coruna/
+    - Ferrol: urban/ferrol.md
+    - Lugo: urban/lugo.md
+    - Ourense: urban/ourense.md
+    - Pontevedra: urban/pontevedra.md
     - Santiago de Compostela: urban/santiago.md
     - Vigo: urban/vigo.md
+  - Servicios ferroviarios:
+    - Renfe: train/renfe.md
+    - FEVE: train/feve.md
   - Otros:
     - NAP: other/nap.md
+    - Bicicleta pública: other/bike.md
 
   
