@@ -141,7 +141,6 @@ POST https://apps.alsa.es/rest/api/apps/v1/getDestiStops/
 369 Alcampo - 15093-1
 370 Santa Xema - 15093-3
 371 Pasaxe, Santa Xema - 
-
 ```
 
 ## Líneas
