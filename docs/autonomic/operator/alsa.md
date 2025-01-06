@@ -98,6 +98,52 @@ POST https://apps.alsa.es/rest/api/apps/v1/getDestiStops/
 }
 ```
 
+!!! note "Equivalencias red urbana-interurbana"
+
+	```http
+523 Abente y Lago - 15062-1
+1 Porta Real - 15086-1
+139 Porta Real, dásena - 15086-2
+3 Av. Marina, Obelisco - 15087-1
+27 Obelisco - 15087-2
+5 Pza. Ourense - 15002-1
+25 Pza. Ourense, porto - 15002-2
+344 A.Molina, Pza. Madrid -15088-1/15691-1
+399 A.Molina, EA - 15088-2
+41 Palloza, 5 - 15003-2
+30 Av. Oza, gaiteira - 15004-1
+39 Av. Oza, 115 - 15004-2
+55 Av. Pasaxe, Av. Concordia - 15005-1
+20 Os Castros - 15005-2
+445 Av. Monelos, 6 - 16541-1
+70 Av. Monelos, 141 - 16541-2
+363 Av. Monelos, f/ 211 - 16543-1
+378 Av. Monelos, 211 - 16543-2
+364 Eiria, 40 - 15162-1
+377 Monelos, 243 - 15162-2
+366 Monserrat, Arces - 16544 - 1
+374 Pedralonga, f/4 - 16544-2
+368 Fabrica de Armas - 16545-1
+373 Pedralonga, 57 - 16545-2
+60 Pasaxe, tanatorio - 15006-2
+275 Pasaxe, gasolineira - 15007-1
+293 Pasaxe, materno - 15007-2
+276 Pasaxe, oncoloxico - 15008-1
+292 Pasaxe, S.Mª Mar - 15008-2
+286 A. Molina, Coliseum - 15089-1
+281 A.Molina, Matogrande - 15089-2
+346 A.Molina, C.Elviña - 15090-1
+279 A.Molina, Ofimático - 15090-2
+288 A.Molina, zapateira - 15091-1
+289 A.Molina, autoestrada - 15092-1
+278 A.Molina, palavea - 15092-2
+277 A. Molina, pedralonga - 15093-2
+369 Alcampo - 15093-1
+370 Santa Xema - 15093-3
+371 Pasaxe, Santa Xema - 
+
+```
+
 ## Líneas
 
 Llamando por HTTP POST con los parámetros adecuados a la siguiente URL se obtienen todas las líneas con su id, nombre largo, nombre corto y color representativo.
