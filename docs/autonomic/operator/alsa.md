@@ -266,3 +266,7 @@ POST https://apps.alsa.es/rest/api/urb/v1/getDeparturesStop/
 
 }
 ```
+
+## Códigos QR
+
+Es posible crear códigos QR que cuando los leas la aplicación Alsa Regional te muestre datos de esa parada, estes están pegados en algunas paradas. <https://www.alsa.es/tracking-bus?p_p_id=TrackingBusPortlet_WAR_Alsaportlet&_TrackingBusPortlet_WAR_Alsaportlet_javax.portlet.action=trackingBusParadaAction&pueblo=15001&parada=1&p_p_lifecycle=1&p_p_state=normal&p_p_mode=view&r=0&e=542&z=0&c=1546&isa=1> El parámetro `pueblo` es el `oriCod` y `parada` el `paraCod`, los parámetros finales `e` y `c` son `company` y `conceCod` respectivamente.
