@@ -3,7 +3,6 @@ name: Deploy to GH Pages
 on:
   push:
     branches:
-      - master 
       - main
 
 permissions:
@@ -13,17 +12,17 @@ permissions:
 
 concurrency:
   group: "pages"
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5.2.0
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: 3.12
-      - uses: actions/cache@v4.1.1
+      - uses: actions/cache@v4
         with:
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
@@ -34,7 +33,7 @@ jobs:
       - name: Build the site
         run: mkdocs build
       - name: Upload static to GH Pages
-        uses: actions/upload-pages-artifact@v3.0.1
+        uses: actions/upload-pages-artifact@v4
         with: 
           path: site/
 

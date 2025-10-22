@@ -9,14 +9,11 @@ Los datos de las líneas de autobuses de Monbus se pueden obtener en formato GTF
 !!! warning "Aviso"
     Estos archivos contienen la totalidad de líneas gestionadas por la Xunta de Galicia.
 
-
-
 ## Datos en tiempo real
 
 No existe un feed público en un formato estándar (como lo son GTFS-RealTime o SIRI) para acceder a las estimaciones de llegada de los trenes en tiempo real. Por tanto, no hay forma de obtener las estimaciones de llegadas a las estaciones, ni alertas de servicio ni posiciones de los vehículos.
 
 La única forma de acceder a estos datos (de manera individualizada) es aprovechando distintas APIs de [Xunta](../autonomic/index.md) o FlixBus.
-
 
 ## Paradas
 

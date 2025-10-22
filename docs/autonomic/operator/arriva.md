@@ -1,6 +1,6 @@
 # Arriva
 
-La empresa Arrivaopera en la actualidad varias concesiones de autobús de la Xunta de Galicia.
+La empresa Arriva opera en la actualidad varias concesiones de autobús de la Xunta de Galicia.
 
 ## Datos estáticos
 
@@ -8,8 +8,6 @@ Los datos de las líneas de autobuses de Arriva se pueden obtener en formato GTF
 
 !!! warning "Aviso"
     Estos archivos contienen la totalidad de líneas gestionadas por la Xunta de Galicia.
-
-
 
 ## Datos en tiempo real
 
