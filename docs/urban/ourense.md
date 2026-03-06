@@ -4,17 +4,17 @@ El transporte urbano de Ourense consiste en un servicio de autobuses urbanos pre
 
 ## Datos estáticos
 
-Los datos de las líneas de autobuses urbanos de Vigo se pueden obtener en formato GTFS desde su propia web o desde el [NAP](../other/nap.md) del Ministerio de Transportes y Movilidad Sostenible. La URL del dataset es <https://ourense.avanzagrupo.com/gt/gtfs-urbano-ourense.zip>, sin necesidad de autenticación, en el caso del de su web o  <https://nap.transportes.gob.es/Files/Detail/1387>, en el caso del ofrecido en el NAP.
+Los datos de las líneas de autobuses urbanos de Ourense se pueden obtener en formato GTFS desde su propia web o desde el [NAP](../other/nap.md) del Ministerio de Transportes y Movilidad Sostenible. La URL del dataset es <https://ourense.avanzagrupo.com/gt/gtfs-urbano-ourense.zip>, sin necesidad de autenticación, en el caso del de su web o  <https://nap.transportes.gob.es/Files/Detail/1387>, en el caso del ofrecido en el NAP.
 
-!!! note "Nota"
+!!! warning "Aviso"
 
-	Los datos de GTFS de Avanza Ourense no parecen actualizarse con regularidad, presentando información errónea con líneas antiguas y horarios que no aplican en los días correspondientes (nocturnos y servicios especiales).
+	Los datos de GTFS de Avanza Ourense están completamente desactualizados, presentando información errónea con líneas antiguas y horarios que no aplican en los días correspondientes (nocturnos y servicios especiales).
 
 ## Datos en tiempo real
 
 No existe un feed público en un formato estándar (como lo son GTFS-RealTime o SIRI) para acceder a las estimaciones de llegada de los autobuses urbanos en tiempo real. Por tanto, no hay forma de obtener las estimaciones de llegadas a las paradas, ni alertas de servicio ni posiciones de los vehículos.
 
-La única forma de acceder a estos datos (de manera individualizada) es aprovechando distintas API del Concello de Vigo, extraídas de los QRs de las paradas
+La única forma de acceder a estos datos (de manera individualizada) es aprovechando distintas API del Concello de Ourense, extraídas de los QRs de las paradas
 
 
 ## _Scraping_
@@ -45,7 +45,11 @@ document.querySelectorAll("#GridView1 > tbody > tr")
 
 Es importante filtrar los `td` donde solo hay tres elementos, porque la "UI" utiliza tablas para todo el diseño, incluyendo la paginación en la parte inferior. Esos tres elementos corresponden, en este orden a "linea", "ruta", "minutos". 
 
+!!! warning "Aviso"
+
+	Desde el cambio de líneas solo funcionan determinadas líneas como la 5, 9 y 10.
+
+
 !!! note "Nota"
 
 	Usar la paginación es posible, pero complicado, ya que hay que procesar la primera página, y sacar variables como ViewState, y hacer un POST para obtenerla. Por ello, es mucho más sencillo y eficiente usar la API descrita anteriormente.
-    La web lleva meses caída.
