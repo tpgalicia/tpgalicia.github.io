@@ -1,6 +1,6 @@
 # Urbano de A Coruña
 
-El transporte urbano de A Coruña consiste en un servicio de autobuses urbanos prestado por [Tranvias Coruña](https://tranviascoruna.com), en régimen de concesión por parte del Concello de A Coruña.
+El transporte urbano de A Coruña consiste en un servicio de autobuses urbanos prestado por [Tranvias Coruña](https://tranviascoruna.com), en régimen de concesión por parte del Concello de A Coruña, en precario desde 2025.
 
 ## Datos estáticos
 
@@ -12,10 +12,10 @@ El feed GTFS solo incluye los archivos obligatorios `agency.txt`, `routes.txt`, 
 
 ## Datos en tiempo real
 
-Esta página documenta la API que utiliza la página [iTranvías](https://itranvias.com) de la [Compañía de Tranvías de **La** Coruña](https://tranviascoruna.com), que a la que he hecho *ingeniería inversa* durante el desarrollo de mi página alternativa [bus.delthia.com](https://bus.delthia.com).
+Esta página documenta la API que utiliza la página [iTranvías](https://itranvias.com) de la [Compañía de Tranvías de **La** Coruña](https://tranviascoruna.com), a la cual se ha hecho *ingeniería inversa* durante el desarrollo de la página alternativa [bus.delthia.com](https://bus.delthia.com).
 
 !!! warning "Aviso"
-    Es posible que no haya descubierto toda la funcionalidad, o que haya maneras diferentes de utilizar los parámetros para obtener otros resultados o información adicional. Esta es mi mejor apuesta sobre el funcionamiento de la API según lo observado a través de la página de *iTranvias* y una pequeña investigación
+    Es posible que no se hayan descubierto todas la funcionalidades, o que haya maneras diferentes de utilizar los parámetros para obtener otros resultados o información adicional. Esta es la mejor apuesta sobre el funcionamiento de la API según lo observado a través de la página de *iTranvias* y una pequeña investigación
 
 ### Contenidos
 
