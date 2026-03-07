@@ -36,6 +36,7 @@ nav:
       - ALSA: autonomic/operator/alsa.md
       - Arriva: autonomic/operator/arriva.md
       - Monbus: autonomic/operator/monbus.md
+      - Rías Baixas: autonomic/operator/riasbaixas.md
   - Transporte urbano:
     - A Coruña: urban/coruna/
     - Ferrol: urban/ferrol.md
