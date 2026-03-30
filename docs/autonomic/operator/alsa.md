@@ -204,7 +204,7 @@ POST https://apps.alsa.es/rest/api/urb/v1/getJourneys/
 Llamando por HTTP POST con los parámetros adecuados (los de siempre y además junto a `conceCod` hay que añadir el valor `lineId` y `journeyId` que corresponda) a la siguiente URL se obtienen los vehículos recorriendo la ruta y las paradas con su respectivo id, nombre, sentido (stopLocationId), orden, coordenadas (EN RADIANES) y líneas con enlace.
 
 ```http
-POST https://apps.alsa.es/rest/api/urb/v1/getJourneys/
+POST https://apps.alsa.es/rest/api/urb/v2/getJourneyStops/
 
 {
     "status": "ok",
@@ -314,6 +314,30 @@ POST https://apps.alsa.es/rest/api/urb/v1/getDeparturesStop/
 }
 ```
 
+### Vehículos circulando
+
+Llamando por HTTP POST con los parámetros adecuados (los de siempre) a la siguiente URL se pueden obtener los buses que están circulando, junto a datos como su matrícula, línea y ubicación (en radianes).
+
+```http
+POST https://apps.alsa.es/rest/api/apps/v1/getVehicles/
+
+{
+    "status": "ok",
+    "info": [
+        {
+            "mat": "5504LTD",
+            "linCod": "11115",
+            "expCod": "11115",
+            "itiCod": 0,
+            "latGPS": "0.75665363",
+            "lonGPS": "-0.14668892",
+            "shortName": "A8",
+            "color": "009846",
+            "colorText": "FFFFFF"
+        },
+		{...}
+```
+
 ## Códigos QR
 
-Es posible crear códigos QR que cuando los leas la aplicación Alsa Regional te muestre datos de esa parada, estes están pegados en algunas paradas. <https://www.alsa.es/tracking-bus?p_p_id=TrackingBusPortlet_WAR_Alsaportlet&_TrackingBusPortlet_WAR_Alsaportlet_javax.portlet.action=trackingBusParadaAction&pueblo=15001&parada=1&p_p_lifecycle=1&p_p_state=normal&p_p_mode=view&r=0&e=542&z=0&c=1546&isa=1> El parámetro `pueblo` es el `oriCod` y `parada` el `paraCod`, los parámetros finales `e` y `c` son `company` y `conceCod` respectivamente.
+Es posible crear códigos QR que cuando los leas la aplicación Alsa Regional te muestre datos de esa parada, estes están pegados en algunas paradas. <https://www.alsa.es/tracking-bus?p_p_id=TrackingBusPortlet_WAR_Alsaportlet&_TrackingBusPortlet_WAR_Alsaportlet_javax.portlet.action=trackingBusParadaAction&pueblo=15001&parada=1&p_p_lifecycle=1&p_p_state=normal&p_p_mode=view&r=0&e=542&z=0&c=1546&isa=1> El parámetro `pueblo` es el `oriCod` y `parada` el `paraCod`, los parámetros finales `e`, `z` y `c` son `company`, `zone` y `conceCod` respectivamente.
