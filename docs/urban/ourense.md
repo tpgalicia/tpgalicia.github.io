@@ -45,10 +45,6 @@ document.querySelectorAll("#GridView1 > tbody > tr")
 
 Es importante filtrar los `td` donde solo hay tres elementos, porque la "UI" utiliza tablas para todo el diseño, incluyendo la paginación en la parte inferior. Esos tres elementos corresponden, en este orden a "linea", "ruta", "minutos". 
 
-!!! warning "Aviso"
-
-	Desde el cambio de líneas solo funcionan determinadas líneas como la 5, 9 y 10.
-
 
 !!! note "Nota"
 
