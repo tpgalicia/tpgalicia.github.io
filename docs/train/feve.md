@@ -16,10 +16,6 @@ No existe un feed público en un formato estándar (como lo son GTFS-RealTime o 
 
 La única forma de acceder a estos datos (de manera individualizada) es aprovechando distintas API de Renfe, extraídas de la app oficial de la empresa.
 
-### WDSL de FEVE
-
-Existe un WDSL en el que se describen los servicios de la API de FEVE: <https://ram.renfe.es/ServiciosWebHorarios/Service.asmx>.
-
 ### API de Renfe
 
 Desde la unificación se ha ido integrando en los servicios de Renfe progresivamente descritos a continuación.
@@ -30,14 +26,12 @@ Las alertas sobre modificaciones o incidencias del servicio ferroviario se puede
 
 ### Retrasos y puntualidad de los trenes
 
-Se puede obtener en la siguiente web de la operadora buscando por estación, número de tren o de billete: <https://venta.renfe.com/vol/infoPuntualidadTrenes.do>.
+Se puede obtener en la siguiente web de la operadora buscando por estación, número de tren o de billete: <https://renfe.com/vol/Puntualidad.do>.
 
 ### Estaciones
 
 Se pueden obtener todas las estaciones en la siguiente web de la operadora: <https://horarios.renfe.com/HIRRenfeWeb/estaciones.do> y en <https://www.renfe.com/content/dam/renfe/es/General/buscadores/javascript/estacionesEstaticas.js>.
 
 
-### Horarios
 
-Se pueden obtener todas las estaciones en la siguiente web de la operadora: <https://horarios.renfe.com/HIRRenfeWeb/buscar.do> para Regionales y <https://horarios.renfe.com/cer/hjcer300.jsp?NUCLEO=46&CP=NO&I=s#> para las Cercanías de Ferrol.
 

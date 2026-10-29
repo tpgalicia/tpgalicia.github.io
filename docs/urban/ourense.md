@@ -4,7 +4,7 @@ El transporte urbano de Ourense consiste en un servicio de autobuses urbanos pre
 
 ## Datos estáticos
 
-Los datos de las líneas de autobuses urbanos de Ourense se pueden obtener en formato GTFS desde su propia web o desde el [NAP](../other/nap.md) del Ministerio de Transportes y Movilidad Sostenible. La URL del dataset es <https://ourense.avanzagrupo.com/gt/gtfs-urbano-ourense.zip>, sin necesidad de autenticación, en el caso del de su web o  <https://nap.transportes.gob.es/Files/Detail/1387>, en el caso del ofrecido en el NAP.
+Los datos de las líneas de autobuses urbanos de Ourense se pueden obtener en formato GTFS desde su propia web o desde el [NAP](../other/nap.md) del Ministerio de Transportes y Movilidad Sostenible. La URL del dataset es <https://ourense.avanzagrupo.com/gt/gtfs.zip>, sin necesidad de autenticación, en el caso del de su web o  <https://nap.transportes.gob.es/Files/Detail/1387>, en el caso del ofrecido en el NAP.
 
 !!! warning "Aviso"
 
@@ -23,29 +23,11 @@ De manera alternativa, se pueden obtener los datos de avisos y tiempo real media
 
 ### Avisos
 
-La URL es `https://ourense.avanzagrupo.com/avisos` y el HTML de los avisos se puede obtener, por ejemplo, con el siguiente JavaScript:
+La URL es `https://ourense.buses.com/incidencias.xml` y el HTML de los avisos se puede obtener.
 
-```js
-document
-	.querySelectorAll("#v-pills-tabContent .tab-pane")
-	.values()
-	.map(p => p.innerHTML)
-```
 
 ### Estimaciones de una parada
 
-La URL es `https://consultasqrou.avanzagrupo.com/default.aspx/?parada=45` , cambiando "parada" por el ID de la parada a consultar. Para sacar las estimaciones, se puede usar, por ejemplo, este JavaScript:
-
-```js
-document.querySelectorAll("#GridView1 > tbody > tr")
-	.values()
-	.map(tr => tr.querySelectorAll("td"))
-	.filter(l => l.length === 3)
-```
-
-Es importante filtrar los `td` donde solo hay tres elementos, porque la "UI" utiliza tablas para todo el diseño, incluyendo la paginación en la parte inferior. Esos tres elementos corresponden, en este orden a "linea", "ruta", "minutos". 
+La URL es `https://estimaciones.avanzagrupo.com/qr.aspx/?stop=45` , cambiando "stop" por el ID de la parada a consultar.
 
 
-!!! note "Nota"
-
-	Usar la paginación es posible, pero complicado, ya que hay que procesar la primera página, y sacar variables como ViewState, y hacer un POST para obtenerla. Por ello, es mucho más sencillo y eficiente usar la API descrita anteriormente.

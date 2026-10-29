@@ -5,17 +5,16 @@ En la actualidad existen varios servicios de bicicleta pública en Galicia: [Bic
 ## BiciFerrolterra (Nextgal)
 
 El servicio de bicicletas públicas de Ferrol y Narón es operado por BikeWorks Narón y 2K Systems, gestionado por Tuimil y Nextgal en sus inicios.
-Es necesario hacer scrapping de <http://xestion.biciferrolterra.com/Estaciones.aspx> para obtener los datos de las estaciones.
 
 ## BiciCoruña (PBSC)
 
 El servicio de bicicletas públicas de A Coruña es operado por EMVSA y desarrollado por PBSC, desarrollado por Tuimil y Nextgal en sus inicios.
-Los datos de las estaciones de BiciCoruña se pueden obtener en el [estándar GBFS](https://gbfs.org) en el siguiente dataset <https://acoruna.publicbikesystem.net/customer/gbfs/v2/gbfs.json>
+
 
 ## BiciArteixo (Nextbike)
 
 El servicio de bicicletas públicas de Arteixo es operado por Sumarte y desarrollado por Nextbike.
-Los datos de las estaciones de BiciArteixo se pueden obtener en el [estándar GBFS](https://gbfs.org) en el siguiente dataset <https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_aa/gbfs.json>
+
 
 ## VerdeCiclos, VaiBike y BiciArousa (ITCL)
 
